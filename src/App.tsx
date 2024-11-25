@@ -12,14 +12,14 @@ function App() {
   return (
     <Container fluid style={{ height: "100vh", marginTop: "20px" }}>
       <Row style={{ height: "100vh" }}>
-        <Col sm={12} md={8}>
+        <Col sm={12} md={7}>
           {forms.map((form, index) => (
-            <Col key={index} sm={12} style={{ height: "100vh" }}>
+            <Col key={index} sm={12} style={{ height: "100%" }}>
               <GoogleFormEmbed formUrl={form.formUrl} />
             </Col>
           ))}
         </Col>
-        <Col sm={12} md={4}>
+        <Col sm={12} md={5}>
           <GoogleSheetGraph />
         </Col>
       </Row>
